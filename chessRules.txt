@@ -1,0 +1,70 @@
+There are 6 types of pieces on each of the two sides in chess.
+8 Pawns
+2 Rooks
+2 Knights
+2 Bishops
+1 Queen
+1 King
+
+The object is to take out the opponent's King.
+The it is known that a king cannot escape, a "checkmate" occurs.
+The board is 8x8
+There is a specific starting position.
+White always goes first.
+
+The sides take turns.
+
+When a piece captures another piece, the captured piece is removed from the game board and placed on the side of
+the capturing piece.
+
+Pawn:
+- If clear, can move but not capture one space straight forward.
+- If there is a target, a pawn can capture diagonally forward.
+- Each pawn's first move can go two spaces forward instead of one optionally.
+- If a pawn reaches the furthest row of the board, it is turned into a Queen, Rook, Bishop, or Knight 
+	(pawn's side player's choice, and Queen is the most powerful)
+- En Passant: This special pawn capture allows a pawn to move diagonally forward 
+	(in the diagonally forward direction of the captured pawn) only under these conditions:
+	> the capturing pawn must be on its fifth rank
+	> the captured pawn must be adjacent to the captured pawn (to the right or left)
+	> En Passant can only happen on the move immediately after the captured pawn makes the double-step move
+
+Rook:
+- Can move through any number of open spaces vertically or horizontally
+- Can capture any opposing piece blocking its range upon landing
+- Can also be used in the King's "castle" move
+
+Knight:
+- Can move and capture moving one space in one direction and then two spaces in a perpindicular direction.
+	This move is only blocked by obstacles on the landing square and
+	can capture any opposing piece on the landing square.
+
+Bishop:
+- Can move through any number of open spaces diagonally.
+- Can capture any opposing piece blocking its range upon landing
+
+Queen:
+- The most powerful piece: the Queen has the abilities of the rook(except castling) and the bishop.
+	> The Queen can move any number of open spaces vertically or horizontally.
+	> The Queen can move any number of open spaces diagonally.
+	> The Queen can capture any opposing piece blocking its range upon landing.
+
+King:
+- The critical piece: once the King is defeated the game is over ( a "Checkmate" occurs )
+- If the King is in the capturing range of an enemy piece it is in "check"
+- Can move one space horizontally, vertically, or diagonally if the landing space is clear of friendly pieces
+and is not in capturing range of an opposing piece
+- Can capture opposing pieces upon landing
+- Castle: This move involves either of the two rooks.  Two pieces move through each other in one move:
+	> The King moves two spaces in the horizontal direction of the chosen rook
+	> The chosen rook moves one space past the landing space of the King
+	Castleing can only occur if:
+	> Niether the king nor the chosen rook has ever moved in the game
+	> There are no pieces between the King and the chosen Rook
+	> The King is not in "check"
+	> The King does not pass through a square that is in the capturing range of an enemy piece
+	> The King doen not end up in "check"
+	To clarify:
+	> The chosen rook may be in capturing range
+	> The rook may move through a square in capturing range
+	> The king may have been in check earlier in the game
